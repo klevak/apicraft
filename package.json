@@ -19,7 +19,8 @@
     "less-middleware": "~0.1.9",
     "xmldom": "~0.1.13",
     "yelp": "~0.1.1",
-    "swagger-node-express": "1.2.3"
+    "swagger-node-express": "1.2.3",
+    "usergrid":"0.10.5"
   },
   "engines": {
     "node": ">= 0.8.0",
