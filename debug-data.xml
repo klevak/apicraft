@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="UTF-8"?><DebugSession>
+<Retrieved>25-09-13 22:05:41:843</Retrieved>
+<Organization>pa092013</Organization>
+<Environment>test</Environment>
+<API>kris-jokes</API>
+<Revision>1</Revision>
+<SessionId>1380146343155</SessionId>
+<Messages><Message><DebugId>0ad42cdc-a3e0-4871-82df-acb4b28aa6d8__761</DebugId><Data>
+    <Completed>true</Completed>
+    <Point id="Paused"/>
+    <Point id="Resumed"/>
+    <Point id="StateChange">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:066</Timestamp>
+            <Properties>
+                <Property name="To">REQ_HEADERS_PARSED</Property>
+                <Property name="From">REQ_START</Property>
+            </Properties>
+        </DebugInfo>
+        <RequestMessage>
+            <Content/>
+            <Headers>
+                <Header name="Accept">*/*</Header>
+                <Header name="Accept-Encoding">gzip</Header>
+                <Header name="Accept-Language">en</Header>
+                <Header name="Connection">keep-alive</Header>
+                <Header name="Cookie">CGISESSID=239138198e91c4117300a941653de98f</Header>
+                <Header name="Host">pa092013-test.apigee.net</Header>
+                <Header name="User-Agent">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML</Header>
+                <Header name="X-Apigee.application">kris-jokes</Header>
+                <Header name="X-Apigee.environment">test</Header>
+                <Header name="X-Apigee.organization">pa092013</Header>
+                <Header name="X-Apigee.proxy">default</Header>
+                <Header name="X-Apigee.revision">1</Header>
+                <Header name="X-Apigee.vhost">default</Header>
+            </Headers>
+            <URI>/kleva/joke?jokeid=3229&amp;apikey=KFfn3y0CgdtJc8cC80JUOw8MGDutfFAt</URI>
+            <Verb>GET</Verb>
+        </RequestMessage>
+    </Point>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:066</Timestamp>
+            <Properties>
+                <Property name="environment.name">test</Property>
+                <Property name="environment.qualifiedname">pa092013__test</Property>
+                <Property name="environment.orgname">pa092013</Property>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:067</Timestamp>
+            <Properties>
+                <Property name="organization.name">pa092013</Property>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:067</Timestamp>
+            <Properties>
+                <Property name="virtualhost.port">80</Property>
+                <Property name="virtualhost.name">default</Property>
+                <Property name="virtualhost.ssl.enabled">false</Property>
+                <Property name="virtualhost.aliases">{pa092013-test.apigee.net}</Property>
+                <Property name="virtualhost.ip">192.168.5.12</Property>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:067</Timestamp>
+            <Properties>
+                <Property name="apiproxy.qualifiedname">kris-jokes__1</Property>
+                <Property name="apiproxy.basepath">/</Property>
+                <Property name="apiproxy.revision">1</Property>
+                <Property name="apiproxy.name">kris-jokes</Property>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:069</Timestamp>
+            <Properties>
+                <Property name="proxy.basepath">/kleva</Property>
+                <Property name="proxy.pathsuffix">/joke</Property>
+                <Property name="proxy.url">http://192.168.5.12/kleva/joke?jokeid=3229&amp;apikey=KFfn3y0CgdtJc8cC80JUOw8MGDutfFAt</Property>
+                <Property name="proxy.name">default</Property>
+                <Property name="proxy.client.ip">65.87.20.6</Property>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="StateChange">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:069</Timestamp>
+            <Properties>
+                <Property name="To">PROXY_REQ_FLOW</Property>
+                <Property name="From">REQ_HEADERS_PARSED</Property>
+            </Properties>
+        </DebugInfo>
+        <RequestMessage>
+            <Content/>
+            <Headers>
+                <Header name="Accept">*/*</Header>
+                <Header name="Accept-Encoding">gzip</Header>
+                <Header name="Accept-Language">en</Header>
+                <Header name="Connection">keep-alive</Header>
+                <Header name="Cookie">CGISESSID=239138198e91c4117300a941653de98f</Header>
+                <Header name="Host">pa092013-test.apigee.net</Header>
+                <Header name="User-Agent">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML</Header>
+            </Headers>
+            <URI>/kleva/joke?jokeid=3229&amp;apikey=KFfn3y0CgdtJc8cC80JUOw8MGDutfFAt</URI>
+            <Verb>GET</Verb>
+        </RequestMessage>
+    </Point>
+    <Point id="Condition">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:069</Timestamp>
+            <Properties>
+                <Property name="ExpressionResult">true</Property>
+                <Property name="Expression">("default" equals proxy.name)</Property>
+                <Property name="Tree">PROXY_default</Property>
+            </Properties>
+        </DebugInfo>
+        <VariableAccess>
+            <Get name="proxy.name" value="default"/>
+        </VariableAccess>
+    </Point>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:069</Timestamp>
+            <Properties>
+                <Property name="proxy.flow.name">PreFlow</Property>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:069</Timestamp>
+            <Properties>
+                <Property name="current.flow.name">PreFlow</Property>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="Paused"/>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:070</Timestamp>
+            <Properties>
+                <Property name="oauthV2.VerifyAPIKey-1.failed">false</Property>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:097</Timestamp>
+            <Properties>
+                <Property name="Identifier">verifyapikey.VerifyAPIKey-1.app</Property>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:097</Timestamp>
+            <Properties>
+                <Property name="Identifier">verifyapikey.VerifyAPIKey-1.developer</Property>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="Execution">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:097</Timestamp>
+            <Properties>
+                <Property name="action">CONTINUE</Property>
+                <Property name="stepDefinition-async">false</Property>
+                <Property name="internal">false</Property>
+                <Property name="stepDefinition-type">oauthV2</Property>
+                <Property name="type">OAuthStepExecution</Property>
+                <Property name="enforcement">request</Property>
+                <Property name="stepDefinition-continueOnError">false</Property>
+                <Property name="stepDefinition-displayName">Verify API Key 1</Property>
+                <Property name="stepDefinition-name">VerifyAPIKey-1</Property>
+                <Property name="stepDefinition-enabled">true</Property>
+                <Property name="result">true</Property>
+            </Properties>
+        </DebugInfo>
+        <RequestMessage>
+            <Content/>
+            <Headers>
+                <Header name="Accept">*/*</Header>
+                <Header name="Accept-Encoding">gzip</Header>
+                <Header name="Accept-Language">en</Header>
+                <Header name="Connection">keep-alive</Header>
+                <Header name="Cookie">CGISESSID=239138198e91c4117300a941653de98f</Header>
+                <Header name="Host">pa092013-test.apigee.net</Header>
+                <Header name="User-Agent">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML</Header>
+            </Headers>
+            <URI>/kleva/joke?jokeid=3229&amp;apikey=KFfn3y0CgdtJc8cC80JUOw8MGDutfFAt</URI>
+            <Verb>GET</Verb>
+        </RequestMessage>
+        <VariableAccess>
+            <Get name="oauthV2.VerifyAPIKey-1"/>
+            <Get name="proxy.url" value="http://192.168.5.12/kleva/joke?jokeid=3229&amp;apikey=KFfn3y0CgdtJc8cC80JUOw8MGDutfFAt"/>
+            <Get name="flow.resource.name"/>
+            <Get name="request.queryparam.apikey" value="KFfn3y0CgdtJc8cC80JUOw8MGDutfFAt"/>
+            <Get name="environment.name" value="test"/>
+            <Get name="apiproxy.name" value="kris-jokes"/>
+            <Get name="proxy.pathsuffix" value="/joke"/>
+            <Set name="verifyapikey.VerifyAPIKey-1.issued_at" success="true" value="1380131302234"/>
+            <Set name="verifyapikey.VerifyAPIKey-1.apiproduct.developer.quota.limit" success="true" value="200"/>
+            <Set name="verifyapikey.VerifyAPIKey-1.status" success="true" value="approved"/>
+            <Set name="verifyapikey.VerifyAPIKey-1.apiproduct.developer.quota.interval" success="true" value="1"/>
+            <Set name="verifyapikey.VerifyAPIKey-1.apiproduct.developer.quota.timeunit" success="true" value="minute"/>
+            <Set name="verifyapikey.VerifyAPIKey-1.expires_in" success="true" value="0"/>
+            <Set name="verifyapikey.VerifyAPIKey-1.DisplayName" success="true" value="Kleva App"/>
+            <Set name="developer.app.name" success="true" value="Kleva-App"/>
+            <Set name="verifyapikey.VerifyAPIKey-1.developer.app.name" success="true" value="Kleva-App"/>
+            <Set name="developer.id" success="true" value="pa092013@@@dLONL38y548ERqrc"/>
+            <Set name="verifyapikey.VerifyAPIKey-1.developer.id" success="true" value="pa092013@@@dLONL38y548ERqrc"/>
+            <Set name="developer.email" success="true" value="rdhal@joyent.com"/>
+            <Set name="verifyapikey.VerifyAPIKey-1.developer.email" success="true" value="rdhal@joyent.com"/>
+            <Set name="verifyapikey.VerifyAPIKey-1.Notes" success="true" value=""/>
+            <Set name="verifyapikey.VerifyAPIKey-1.client_secret" success="true" value="iDtqla69BI0qvHem"/>
+            <Set name="verifyapikey.VerifyAPIKey-1.redirection_uris" success="true"/>
+            <Set name="apiproduct.name" success="true" value="old-jokes"/>
+            <Set name="verifyapikey.VerifyAPIKey-1.apiproduct.name" success="true" value="old-jokes"/>
+            <Set name="verifyapikey.VerifyAPIKey-1.developer.app.id" success="true" value="4f167aff-1969-463c-90f2-e05371c56014"/>
+            <Set name="client_id" success="true" value="KFfn3y0CgdtJc8cC80JUOw8MGDutfFAt"/>
+            <Set name="verifyapikey.VerifyAPIKey-1.client_id" success="true" value="KFfn3y0CgdtJc8cC80JUOw8MGDutfFAt"/>
+            <Set name="verifyapikey.VerifyAPIKey-1.apiproduct.access" success="true" value="public"/>
+            <Set name="apigee.developer.app.name" success="true" value="Kleva-App"/>
+            <Set name="apigee.developer.id" success="true" value="pa092013@@@dLONL38y548ERqrc"/>
+            <Set name="apigee.developer.email" success="true" value="rdhal@joyent.com"/>
+            <Set name="apigee.apiproduct.name" success="true" value="old-jokes"/>
+            <Set name="apigee.client_id" success="true" value="KFfn3y0CgdtJc8cC80JUOw8MGDutfFAt"/>
+            <Get name="organization.name" value="pa092013"/>
+            <Set name="verifyapikey.VerifyAPIKey-1.failed" success="true" value="false"/>
+            <Set name="oauthV2.failed" success="true" value="false"/>
+        </VariableAccess>
+    </Point>
+    <Point id="Resumed"/>
+    <Point id="Condition">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:098</Timestamp>
+            <Properties>
+                <Property name="ExpressionResult">true</Property>
+                <Property name="Expression">(proxy.pathsuffix matches /joke and ((request.verb equals "GET") and (request.header.Accept-Language not equals null)))</Property>
+                <Property name="Tree">Joke Translate_REQUEST_FLOW</Property>
+            </Properties>
+        </DebugInfo>
+        <VariableAccess>
+            <Get name="proxy.pathsuffix" value="/joke"/>
+            <Get name="request.verb" value="GET"/>
+            <Get name="request.header.Accept-Language" value="en"/>
+        </VariableAccess>
+    </Point>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:098</Timestamp>
+            <Properties>
+                <Property name="proxy.flow.name">Joke Translate</Property>
+                <Property name="proxy.flow.description"/>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:098</Timestamp>
+            <Properties>
+                <Property name="current.flow.name">Joke Translate</Property>
+                <Property name="current.flow.description"/>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="Execution">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:099</Timestamp>
+            <Properties>
+                <Property name="action">CONTINUE</Property>
+                <Property name="stepDefinition-async">false</Property>
+                <Property name="internal">false</Property>
+                <Property name="stepDefinition-type">assignmessage</Property>
+                <Property name="type">AssignMessageExecution</Property>
+                <Property name="enforcement">request</Property>
+                <Property name="stepDefinition-continueOnError">false</Property>
+                <Property name="stepDefinition-displayName">Assign BingAT Request</Property>
+                <Property name="stepDefinition-name">AssignBineATRequest</Property>
+                <Property name="stepDefinition-enabled">true</Property>
+                <Property name="result">true</Property>
+            </Properties>
+        </DebugInfo>
+        <RequestMessage>
+            <Content/>
+            <Headers>
+                <Header name="Accept">*/*</Header>
+                <Header name="Accept-Encoding">gzip</Header>
+                <Header name="Accept-Language">en</Header>
+                <Header name="Connection">keep-alive</Header>
+                <Header name="Cookie">CGISESSID=239138198e91c4117300a941653de98f</Header>
+                <Header name="Host">pa092013-test.apigee.net</Header>
+                <Header name="User-Agent">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML</Header>
+            </Headers>
+            <URI>/kleva/joke?jokeid=3229&amp;apikey=KFfn3y0CgdtJc8cC80JUOw8MGDutfFAt</URI>
+            <Verb>GET</Verb>
+        </RequestMessage>
+        <VariableAccess>
+            <Get name="CreateBingATRequest"/>
+        </VariableAccess>
+    </Point>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:099</Timestamp>
+            <Properties>
+                <Property name="proxy.flow.name">PostFlow</Property>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:099</Timestamp>
+            <Properties>
+                <Property name="current.flow.name">PostFlow</Property>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:099</Timestamp>
+            <Properties>
+                <Property name="route.name">default</Property>
+                <Property name="route.target">default</Property>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:099</Timestamp>
+            <Properties>
+                <Property name="target.url">http://jokeindex.com/services/20/api</Property>
+                <Property name="target.basepath.with.query">/services/20/api</Property>
+                <Property name="target.copy.queryparams">true</Property>
+                <Property name="target.copy.pathsuffix">true</Property>
+                <Property name="target.basepath">/services/20/api</Property>
+                <Property name="target.name">default</Property>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:099</Timestamp>
+            <Properties>
+                <Property name="targetURL">http://jokeindex.com/services/20/api</Property>
+                <Property name="targetBasePath">/services/20/api</Property>
+                <Property name="targetRequestSender">InlineTargetRequestSender</Property>
+                <Property name="targetEndpoint">default{Organization=pa092013Environment=test,Application=kris-jokes__1}</Property>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="StateChange">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:100</Timestamp>
+            <Properties>
+                <Property name="To">TARGET_REQ_FLOW</Property>
+                <Property name="From">PROXY_REQ_FLOW</Property>
+            </Properties>
+        </DebugInfo>
+        <RequestMessage>
+            <Content/>
+            <Headers>
+                <Header name="Accept">*/*</Header>
+                <Header name="Accept-Encoding">gzip</Header>
+                <Header name="Accept-Language">en</Header>
+                <Header name="Connection">keep-alive</Header>
+                <Header name="Cookie">CGISESSID=239138198e91c4117300a941653de98f</Header>
+                <Header name="Host">pa092013-test.apigee.net</Header>
+                <Header name="User-Agent">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML</Header>
+            </Headers>
+            <URI>/kleva/joke?jokeid=3229&amp;apikey=KFfn3y0CgdtJc8cC80JUOw8MGDutfFAt</URI>
+            <Verb>GET</Verb>
+        </RequestMessage>
+    </Point>
+    <Point id="Condition">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:100</Timestamp>
+            <Properties>
+                <Property name="ExpressionResult">true</Property>
+                <Property name="Expression">("default" equals target.name)</Property>
+                <Property name="Tree">TARGET_default</Property>
+            </Properties>
+        </DebugInfo>
+        <VariableAccess>
+            <Get name="target.name" value="default"/>
+        </VariableAccess>
+    </Point>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:100</Timestamp>
+            <Properties>
+                <Property name="target.flow.name">PreFlow</Property>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:100</Timestamp>
+            <Properties>
+                <Property name="current.flow.name">PreFlow</Property>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:100</Timestamp>
+            <Properties>
+                <Property name="target.flow.name">PostFlow</Property>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:100</Timestamp>
+            <Properties>
+                <Property name="current.flow.name">PostFlow</Property>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="Execution">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:101</Timestamp>
+            <Properties>
+                <Property name="action">CONTINUE</Property>
+                <Property name="stepDefinition-async">false</Property>
+                <Property name="internal">false</Property>
+                <Property name="stepDefinition-type">assignmessage</Property>
+                <Property name="type">AssignMessageExecution</Property>
+                <Property name="enforcement">request</Property>
+                <Property name="stepDefinition-continueOnError">false</Property>
+                <Property name="stepDefinition-displayName">Assign Auth Header</Property>
+                <Property name="stepDefinition-name">AssignAuthHeader</Property>
+                <Property name="stepDefinition-enabled">true</Property>
+                <Property name="result">true</Property>
+            </Properties>
+        </DebugInfo>
+        <RequestMessage>
+            <Content/>
+            <Headers>
+                <Header name="Accept">*/*</Header>
+                <Header name="Accept-Encoding">gzip</Header>
+                <Header name="Accept-Language">en</Header>
+                <Header name="Authorization">*****</Header>
+                <Header name="Connection">keep-alive</Header>
+                <Header name="Cookie">CGISESSID=239138198e91c4117300a941653de98f</Header>
+                <Header name="Host">pa092013-test.apigee.net</Header>
+                <Header name="User-Agent">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML</Header>
+            </Headers>
+            <URI>/kleva/joke?jokeid=3229&amp;apikey=KFfn3y0CgdtJc8cC80JUOw8MGDutfFAt</URI>
+            <Verb>GET</Verb>
+        </RequestMessage>
+        <VariableAccess/>
+    </Point>
+    <Point id="Paused"/>
+    <Point id="Resumed"/>
+    <Point id="StateChange">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:131</Timestamp>
+            <Properties>
+                <Property name="To">REQ_SENT</Property>
+                <Property name="From">TARGET_REQ_FLOW</Property>
+            </Properties>
+        </DebugInfo>
+        <ResponseMessage>
+            <Content/>
+            <Headers/>
+            <ReasonPhrase>OK</ReasonPhrase>
+            <StatusCode>200</StatusCode>
+        </ResponseMessage>
+    </Point>
+    <Point id="Paused"/>
+    <Point id="Resumed"/>
+    <Point id="StateChange">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:587</Timestamp>
+            <Properties>
+                <Property name="To">RESP_START</Property>
+                <Property name="From">REQ_SENT</Property>
+            </Properties>
+        </DebugInfo>
+        <ResponseMessage>
+            <Content/>
+            <Headers>
+                <Header name="Cache-control">no-cache</Header>
+                <Header name="Connection">Keep-Alive</Header>
+                <Header name="Content-Type">application/json</Header>
+                <Header name="Date">Wed, 25 Sep 2013 22:16:16 GMT</Header>
+                <Header name="Etag">Wed</Header>
+                <Header name="Expires">Wed, 25 Sep 2013 22:16:16 GMT</Header>
+                <Header name="Keep-Alive">timeout=15</Header>
+                <Header name="Modified">now</Header>
+                <Header name="Pragma">No-cache</Header>
+                <Header name="Server">Apache/2.2.9 (Debian) PHP/5.2.6-1+lenny13 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g</Header>
+                <Header name="Transfer-Encoding">chunked</Header>
+                <Header name="X-server">jokeindex.com</Header>
+            </Headers>
+            <ReasonPhrase>OK</ReasonPhrase>
+            <StatusCode>200</StatusCode>
+        </ResponseMessage>
+    </Point>
+    <Point id="Condition">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:588</Timestamp>
+            <Properties>
+                <Property name="ExpressionResult">true</Property>
+                <Property name="Expression">("default" equals target.name)</Property>
+                <Property name="Tree">TARGET_default</Property>
+            </Properties>
+        </DebugInfo>
+        <VariableAccess>
+            <Get name="target.name" value="default"/>
+        </VariableAccess>
+    </Point>
+    <Point id="Paused"/>
+    <Point id="Resumed"/>
+    <Point id="StateChange">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:597</Timestamp>
+            <Properties>
+                <Property name="To">TARGET_RESP_FLOW</Property>
+                <Property name="From">RESP_START</Property>
+            </Properties>
+        </DebugInfo>
+        <ResponseMessage>
+            <Content>{"body":"An actual tip from page 16 of the HP &amp;quot;Environmental,Health &amp;amp; Safety Handbook for  Employees&amp;quot;: \n\n &amp;quot;Blink your eyelids periodically to lubricate your  eyes.&amp;quot;","title":"Advice for Idiots","jokeid":"3229","img":"","rating":"G","modified":"2000-07-31"}</Content>
+            <Headers>
+                <Header name="Cache-control">no-cache</Header>
+                <Header name="Connection">Keep-Alive</Header>
+                <Header name="Content-Type">application/json</Header>
+                <Header name="Date">Wed, 25 Sep 2013 22:16:16 GMT</Header>
+                <Header name="Etag">Wed</Header>
+                <Header name="Expires">Wed, 25 Sep 2013 22:16:16 GMT</Header>
+                <Header name="Keep-Alive">timeout=15</Header>
+                <Header name="Modified">now</Header>
+                <Header name="Pragma">No-cache</Header>
+                <Header name="Server">Apache/2.2.9 (Debian) PHP/5.2.6-1+lenny13 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g</Header>
+                <Header name="Transfer-Encoding">chunked</Header>
+                <Header name="X-server">jokeindex.com</Header>
+            </Headers>
+            <ReasonPhrase>OK</ReasonPhrase>
+            <StatusCode>200</StatusCode>
+        </ResponseMessage>
+    </Point>
+    <Point id="Condition">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:597</Timestamp>
+            <Properties>
+                <Property name="ExpressionResult">true</Property>
+                <Property name="Expression">("default" equals target.name)</Property>
+                <Property name="Tree">TARGET_default</Property>
+            </Properties>
+        </DebugInfo>
+        <VariableAccess>
+            <Get name="target.name" value="default"/>
+        </VariableAccess>
+    </Point>
+    <Point id="StateChange">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:597</Timestamp>
+            <Properties>
+                <Property name="To">PROXY_RESP_FLOW</Property>
+                <Property name="From">TARGET_RESP_FLOW</Property>
+            </Properties>
+        </DebugInfo>
+        <ResponseMessage>
+            <Content>{"body":"An actual tip from page 16 of the HP &amp;quot;Environmental,Health &amp;amp; Safety Handbook for  Employees&amp;quot;: \n\n &amp;quot;Blink your eyelids periodically to lubricate your  eyes.&amp;quot;","title":"Advice for Idiots","jokeid":"3229","img":"","rating":"G","modified":"2000-07-31"}</Content>
+            <Headers>
+                <Header name="Cache-control">no-cache</Header>
+                <Header name="Connection">Keep-Alive</Header>
+                <Header name="Content-Type">application/json</Header>
+                <Header name="Date">Wed, 25 Sep 2013 22:16:16 GMT</Header>
+                <Header name="Etag">Wed</Header>
+                <Header name="Expires">Wed, 25 Sep 2013 22:16:16 GMT</Header>
+                <Header name="Keep-Alive">timeout=15</Header>
+                <Header name="Modified">now</Header>
+                <Header name="Pragma">No-cache</Header>
+                <Header name="Server">Apache/2.2.9 (Debian) PHP/5.2.6-1+lenny13 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g</Header>
+                <Header name="Transfer-Encoding">chunked</Header>
+                <Header name="X-server">jokeindex.com</Header>
+            </Headers>
+            <ReasonPhrase>OK</ReasonPhrase>
+            <StatusCode>200</StatusCode>
+        </ResponseMessage>
+    </Point>
+    <Point id="Condition">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:598</Timestamp>
+            <Properties>
+                <Property name="ExpressionResult">true</Property>
+                <Property name="Expression">("default" equals proxy.name)</Property>
+                <Property name="Tree">PROXY_default</Property>
+            </Properties>
+        </DebugInfo>
+        <VariableAccess>
+            <Get name="proxy.name" value="default"/>
+        </VariableAccess>
+    </Point>
+    <Point id="Condition">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:598</Timestamp>
+            <Properties>
+                <Property name="ExpressionResult">true</Property>
+                <Property name="Expression">(proxy.pathsuffix matches /joke and ((request.verb equals "GET") and (request.header.Accept-Language not equals null)))</Property>
+                <Property name="Tree">Joke Translate_RESPONSE_FLOW</Property>
+            </Properties>
+        </DebugInfo>
+        <VariableAccess>
+            <Get name="proxy.pathsuffix" value="/joke"/>
+            <Get name="request.verb" value="GET"/>
+            <Get name="request.header.Accept-Language" value="en"/>
+        </VariableAccess>
+    </Point>
+    <Point id="Execution">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:599</Timestamp>
+            <Properties>
+                <Property name="action">CONTINUE</Property>
+                <Property name="stepDefinition-async">false</Property>
+                <Property name="internal">false</Property>
+                <Property name="stepDefinition-type">extractvariables</Property>
+                <Property name="type">ExtractVariablesExecution</Property>
+                <Property name="enforcement">response</Property>
+                <Property name="stepDefinition-continueOnError">false</Property>
+                <Property name="stepDefinition-displayName">Extract Joke Variables</Property>
+                <Property name="stepDefinition-name">ExtractJokeVariables</Property>
+                <Property name="stepDefinition-enabled">true</Property>
+                <Property name="result">true</Property>
+            </Properties>
+        </DebugInfo>
+        <ResponseMessage>
+            <Content>{"body":"An actual tip from page 16 of the HP &amp;quot;Environmental,Health &amp;amp; Safety Handbook for  Employees&amp;quot;: \n\n &amp;quot;Blink your eyelids periodically to lubricate your  eyes.&amp;quot;","title":"Advice for Idiots","jokeid":"3229","img":"","rating":"G","modified":"2000-07-31"}</Content>
+            <Headers>
+                <Header name="Cache-control">no-cache</Header>
+                <Header name="Connection">Keep-Alive</Header>
+                <Header name="Content-Type">application/json</Header>
+                <Header name="Date">Wed, 25 Sep 2013 22:16:16 GMT</Header>
+                <Header name="Etag">Wed</Header>
+                <Header name="Expires">Wed, 25 Sep 2013 22:16:16 GMT</Header>
+                <Header name="Keep-Alive">timeout=15</Header>
+                <Header name="Modified">now</Header>
+                <Header name="Pragma">No-cache</Header>
+                <Header name="Server">Apache/2.2.9 (Debian) PHP/5.2.6-1+lenny13 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g</Header>
+                <Header name="Transfer-Encoding">chunked</Header>
+                <Header name="X-server">jokeindex.com</Header>
+            </Headers>
+            <ReasonPhrase>OK</ReasonPhrase>
+            <StatusCode>200</StatusCode>
+        </ResponseMessage>
+        <VariableAccess>
+            <Get name="jokes"/>
+        </VariableAccess>
+    </Point>
+    <Point id="Execution">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:599</Timestamp>
+            <Properties>
+                <Property name="action">CONTINUE</Property>
+                <Property name="stepDefinition-async">false</Property>
+                <Property name="internal">false</Property>
+                <Property name="stepDefinition-type">assignmessage</Property>
+                <Property name="type">AssignMessageExecution</Property>
+                <Property name="enforcement">response</Property>
+                <Property name="stepDefinition-continueOnError">false</Property>
+                <Property name="stepDefinition-displayName">Assign BingAT Request</Property>
+                <Property name="stepDefinition-name">AssignBineATRequest</Property>
+                <Property name="stepDefinition-enabled">true</Property>
+                <Property name="result">true</Property>
+            </Properties>
+        </DebugInfo>
+        <ResponseMessage>
+            <Content>{"body":"An actual tip from page 16 of the HP &amp;quot;Environmental,Health &amp;amp; Safety Handbook for  Employees&amp;quot;: \n\n &amp;quot;Blink your eyelids periodically to lubricate your  eyes.&amp;quot;","title":"Advice for Idiots","jokeid":"3229","img":"","rating":"G","modified":"2000-07-31"}</Content>
+            <Headers>
+                <Header name="Cache-control">no-cache</Header>
+                <Header name="Connection">Keep-Alive</Header>
+                <Header name="Content-Type">application/json</Header>
+                <Header name="Date">Wed, 25 Sep 2013 22:16:16 GMT</Header>
+                <Header name="Etag">Wed</Header>
+                <Header name="Expires">Wed, 25 Sep 2013 22:16:16 GMT</Header>
+                <Header name="Keep-Alive">timeout=15</Header>
+                <Header name="Modified">now</Header>
+                <Header name="Pragma">No-cache</Header>
+                <Header name="Server">Apache/2.2.9 (Debian) PHP/5.2.6-1+lenny13 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g</Header>
+                <Header name="Transfer-Encoding">chunked</Header>
+                <Header name="X-server">jokeindex.com</Header>
+            </Headers>
+            <ReasonPhrase>OK</ReasonPhrase>
+            <StatusCode>200</StatusCode>
+        </ResponseMessage>
+        <VariableAccess/>
+    </Point>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:600</Timestamp>
+            <Properties>
+                <Property name="ServiceCallout.requesturl">https://datamarket.accesscontrol.windows.net/v2/OAuth2-13</Property>
+                <Property name="ServiceCallout.request">client_id=3e4ef81e-6073-4e97-aa02-53d9f465c4a5&amp;client_secret=cgwe00rH9SzWizax%2FzkCjGs4t8EltuyWaqcGVmvqxYg%3D&amp;scope=http%3A%2F%2Fapi.microsofttranslator.com&amp;grant_type=client_credentials</Property>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="Execution">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:600</Timestamp>
+            <Properties>
+                <Property name="action">PAUSE</Property>
+                <Property name="stepDefinition-async">false</Property>
+                <Property name="internal">false</Property>
+                <Property name="stepDefinition-type">servicecallout</Property>
+                <Property name="type">ServiceCalloutExecution</Property>
+                <Property name="enforcement">response</Property>
+                <Property name="stepDefinition-continueOnError">false</Property>
+                <Property name="stepDefinition-displayName">Callout BingAT</Property>
+                <Property name="stepDefinition-name">CalloutBingAT</Property>
+                <Property name="stepDefinition-enabled">true</Property>
+                <Property name="result">true</Property>
+            </Properties>
+        </DebugInfo>
+        <ResponseMessage>
+            <Content>{"body":"An actual tip from page 16 of the HP &amp;quot;Environmental,Health &amp;amp; Safety Handbook for  Employees&amp;quot;: \n\n &amp;quot;Blink your eyelids periodically to lubricate your  eyes.&amp;quot;","title":"Advice for Idiots","jokeid":"3229","img":"","rating":"G","modified":"2000-07-31"}</Content>
+            <Headers>
+                <Header name="Cache-control">no-cache</Header>
+                <Header name="Connection">Keep-Alive</Header>
+                <Header name="Content-Type">application/json</Header>
+                <Header name="Date">Wed, 25 Sep 2013 22:16:16 GMT</Header>
+                <Header name="Etag">Wed</Header>
+                <Header name="Expires">Wed, 25 Sep 2013 22:16:16 GMT</Header>
+                <Header name="Keep-Alive">timeout=15</Header>
+                <Header name="Modified">now</Header>
+                <Header name="Pragma">No-cache</Header>
+                <Header name="Server">Apache/2.2.9 (Debian) PHP/5.2.6-1+lenny13 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g</Header>
+                <Header name="Transfer-Encoding">chunked</Header>
+                <Header name="X-server">jokeindex.com</Header>
+            </Headers>
+            <ReasonPhrase>OK</ReasonPhrase>
+            <StatusCode>200</StatusCode>
+        </ResponseMessage>
+        <VariableAccess>
+            <Set name="servicecallout.requesturi" success="true" value="/v2/OAuth2-13"/>
+        </VariableAccess>
+    </Point>
+    <Point id="Paused"/>
+    <Point id="FlowInfo">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:867</Timestamp>
+            <Properties>
+                <Property name="ServiceCallout.response">{"token_type":"http://schemas.xmlsoap.org/ws/2009/11/swt-token-profile-1.0","access_token":"http%3a%2f%2fschemas.xmlsoap.org%2fws%2f2005%2f05%2fidentity%2fclaims%2fnameidentifier=3e4ef81e-6073-4e97-aa02-53d9f465c4a5&amp;http%3a%2f%2fschemas.microsoft.com%2faccesscontrolservice%2f2010%2f07%2fclaims%2fidentityprovider=https%3a%2f%2fdatamarket.accesscontrol.windows.net%2f&amp;Audience=http%3a%2f%2fapi.microsofttranslator.com&amp;ExpiresOn=1380146948&amp;Issuer=https%3a%2f%2fdatamarket.accesscontrol.windows.net%2f&amp;.....</Property>
+            </Properties>
+        </DebugInfo>
+    </Point>
+    <Point id="Resumed"/>
+    <Point id="Execution">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:868</Timestamp>
+            <Properties>
+                <Property name="action">CONTINUE</Property>
+                <Property name="stepDefinition-async">false</Property>
+                <Property name="internal">false</Property>
+                <Property name="stepDefinition-type">extractvariables</Property>
+                <Property name="type">ExtractVariablesExecution</Property>
+                <Property name="enforcement">response</Property>
+                <Property name="stepDefinition-continueOnError">false</Property>
+                <Property name="stepDefinition-displayName">Extract BingAT</Property>
+                <Property name="stepDefinition-name">ExtractBingAT</Property>
+                <Property name="stepDefinition-enabled">true</Property>
+                <Property name="result">true</Property>
+            </Properties>
+        </DebugInfo>
+        <ResponseMessage>
+            <Content>{"body":"An actual tip from page 16 of the HP &amp;quot;Environmental,Health &amp;amp; Safety Handbook for  Employees&amp;quot;: \n\n &amp;quot;Blink your eyelids periodically to lubricate your  eyes.&amp;quot;","title":"Advice for Idiots","jokeid":"3229","img":"","rating":"G","modified":"2000-07-31"}</Content>
+            <Headers>
+                <Header name="Cache-control">no-cache</Header>
+                <Header name="Connection">Keep-Alive</Header>
+                <Header name="Content-Type">application/json</Header>
+                <Header name="Date">Wed, 25 Sep 2013 22:16:16 GMT</Header>
+                <Header name="Etag">Wed</Header>
+                <Header name="Expires">Wed, 25 Sep 2013 22:16:16 GMT</Header>
+                <Header name="Keep-Alive">timeout=15</Header>
+                <Header name="Modified">now</Header>
+                <Header name="Pragma">No-cache</Header>
+                <Header name="Server">Apache/2.2.9 (Debian) PHP/5.2.6-1+lenny13 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g</Header>
+                <Header name="Transfer-Encoding">chunked</Header>
+                <Header name="X-server">jokeindex.com</Header>
+            </Headers>
+            <ReasonPhrase>OK</ReasonPhrase>
+            <StatusCode>200</StatusCode>
+        </ResponseMessage>
+        <VariableAccess>
+            <Get name="bingat"/>
+        </VariableAccess>
+    </Point>
+    <Point id="StateChange">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:868</Timestamp>
+            <Properties>
+                <Property name="To">RESP_SENT</Property>
+                <Property name="From">PROXY_RESP_FLOW</Property>
+            </Properties>
+        </DebugInfo>
+        <ResponseMessage>
+            <Content>{"body":"An actual tip from page 16 of the HP &amp;quot;Environmental,Health &amp;amp; Safety Handbook for  Employees&amp;quot;: \n\n &amp;quot;Blink your eyelids periodically to lubricate your  eyes.&amp;quot;","title":"Advice for Idiots","jokeid":"3229","img":"","rating":"G","modified":"2000-07-31"}</Content>
+            <Headers>
+                <Header name="Cache-control">no-cache</Header>
+                <Header name="Connection">Keep-Alive</Header>
+                <Header name="Content-Type">application/json</Header>
+                <Header name="Date">Wed, 25 Sep 2013 22:16:16 GMT</Header>
+                <Header name="Etag">Wed</Header>
+                <Header name="Expires">Wed, 25 Sep 2013 22:16:16 GMT</Header>
+                <Header name="Keep-Alive">timeout=15</Header>
+                <Header name="Modified">now</Header>
+                <Header name="Pragma">No-cache</Header>
+                <Header name="Server">Apache/2.2.9 (Debian) PHP/5.2.6-1+lenny13 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g</Header>
+                <Header name="Transfer-Encoding">chunked</Header>
+                <Header name="X-server">jokeindex.com</Header>
+            </Headers>
+            <ReasonPhrase>OK</ReasonPhrase>
+            <StatusCode>200</StatusCode>
+        </ResponseMessage>
+    </Point>
+    <Point id="Condition">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:868</Timestamp>
+            <Properties>
+                <Property name="ExpressionResult">true</Property>
+                <Property name="Expression">("default" equals proxy.name)</Property>
+                <Property name="Tree">PROXY_default</Property>
+            </Properties>
+        </DebugInfo>
+        <VariableAccess>
+            <Get name="proxy.name" value="default"/>
+        </VariableAccess>
+    </Point>
+    <Point id="Condition">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:869</Timestamp>
+            <Properties>
+                <Property name="ExpressionResult">true</Property>
+                <Property name="Expression">("default" equals target.name)</Property>
+                <Property name="Tree">TARGET_default</Property>
+            </Properties>
+        </DebugInfo>
+        <VariableAccess>
+            <Get name="target.name" value="default"/>
+        </VariableAccess>
+    </Point>
+    <Point id="Execution">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:869</Timestamp>
+            <Properties>
+                <Property name="expressionResult">true</Property>
+                <Property name="type">AnalyticsPredefinedVariablesPublisher</Property>
+                <Property name="expression">(analytics equals null )</Property>
+            </Properties>
+        </DebugInfo>
+        <ResponseMessage>
+            <Content>{"body":"An actual tip from page 16 of the HP &amp;quot;Environmental,Health &amp;amp; Safety Handbook for  Employees&amp;quot;: \n\n &amp;quot;Blink your eyelids periodically to lubricate your  eyes.&amp;quot;","title":"Advice for Idiots","jokeid":"3229","img":"","rating":"G","modified":"2000-07-31"}</Content>
+            <Headers>
+                <Header name="Cache-control">no-cache</Header>
+                <Header name="Connection">Keep-Alive</Header>
+                <Header name="Content-Type">application/json</Header>
+                <Header name="Date">Wed, 25 Sep 2013 22:16:16 GMT</Header>
+                <Header name="Etag">Wed</Header>
+                <Header name="Expires">Wed, 25 Sep 2013 22:16:16 GMT</Header>
+                <Header name="Keep-Alive">timeout=15</Header>
+                <Header name="Modified">now</Header>
+                <Header name="Pragma">No-cache</Header>
+                <Header name="Server">Apache/2.2.9 (Debian) PHP/5.2.6-1+lenny13 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g</Header>
+                <Header name="Transfer-Encoding">chunked</Header>
+                <Header name="X-server">jokeindex.com</Header>
+            </Headers>
+            <ReasonPhrase>OK</ReasonPhrase>
+            <StatusCode>200</StatusCode>
+        </ResponseMessage>
+        <VariableAccess>
+            <Get name="organization.name" value="pa092013"/>
+            <Get name="environment.name" value="test"/>
+            <Get name="apiproxy.name" value="kris-jokes"/>
+            <Get name="apiproxy.revision" value="1"/>
+            <Get name="proxy.name" value="default"/>
+            <Get name="proxy.basepath" value="/kleva"/>
+            <Get name="proxy.pathsuffix" value="/joke"/>
+            <Get name="request.header.X-Forwarded-For"/>
+            <Get name="proxy.client.ip" value="65.87.20.6"/>
+            <Get name="target.name" value="default"/>
+            <Get name="dynamic.target"/>
+            <Get name="target.basepath" value="/services/20/api"/>
+            <Get name="dynamic.target"/>
+            <Get name="target.url" value="http://jokeindex.com/services/20/api"/>
+            <Get name="target.ip" value="184.106.242.165"/>
+            <Get name="client.ip" value="65.87.20.6"/>
+            <Get name="is.error" value="false"/>
+            <Get name="target.sent.start.timestamp" value="1380146347131"/>
+            <Get name="target.sent.end.timestamp" value="1380146347131"/>
+            <Get name="target.received.start.timestamp" value="1380146347587"/>
+            <Get name="target.received.end.timestamp" value="1380146347596"/>
+            <Get name="client.received.start.timestamp" value="1380146347065"/>
+            <Get name="client.received.end.timestamp" value="1380146347066"/>
+            <Get name="response.status.code" value="200"/>
+            <Get name="request.uri" value="/services/20/api/joke?jokeid=3229&amp;apikey=KFfn3y0CgdtJc8cC80JUOw8MGDutfFAt"/>
+            <Get name="request.path" value="/services/20/api/joke"/>
+            <Get name="request.verb" value="GET"/>
+            <Get name="virtualhost.name" value="default"/>
+            <Get name="apigee.developer.app.name" value="Kleva-App"/>
+            <Get name="apigee.apiproduct.name" value="old-jokes"/>
+            <Get name="apigee.access_token"/>
+            <Get name="apigee.client_id" value="KFfn3y0CgdtJc8cC80JUOw8MGDutfFAt"/>
+            <Get name="flow.resource.name"/>
+            <Get name="gateway.flow.id"/>
+            <Get name="sla"/>
+            <Get name="client.received.content.length" value="0"/>
+            <Get name="target.received.content.length" value="315"/>
+            <Get name="cachehit"/>
+            <Get name="apigee.developer.id" value="pa092013@@@dLONL38y548ERqrc"/>
+            <Get name="target.response.status.code" value="200"/>
+            <Get name="request.header.X-Forwarded-For"/>
+            <Get name="apigee.developer.email" value="rdhal@joyent.com"/>
+            <Get name="request.header.User-Agent" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML"/>
+            <Get name="organization.name" value="pa092013"/>
+            <Get name="environment.name" value="test"/>
+        </VariableAccess>
+    </Point>
+    <Point id="Execution">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:869</Timestamp>
+            <Properties>
+                <Property name="expressionResult">false</Property>
+                <Property name="type">AnalyticsPublisher</Property>
+                <Property name="expression">(analytics not null)</Property>
+            </Properties>
+        </DebugInfo>
+        <ResponseMessage>
+            <Content>{"body":"An actual tip from page 16 of the HP &amp;quot;Environmental,Health &amp;amp; Safety Handbook for  Employees&amp;quot;: \n\n &amp;quot;Blink your eyelids periodically to lubricate your  eyes.&amp;quot;","title":"Advice for Idiots","jokeid":"3229","img":"","rating":"G","modified":"2000-07-31"}</Content>
+            <Headers>
+                <Header name="Cache-control">no-cache</Header>
+                <Header name="Connection">Keep-Alive</Header>
+                <Header name="Content-Type">application/json</Header>
+                <Header name="Date">Wed, 25 Sep 2013 22:16:16 GMT</Header>
+                <Header name="Etag">Wed</Header>
+                <Header name="Expires">Wed, 25 Sep 2013 22:16:16 GMT</Header>
+                <Header name="Keep-Alive">timeout=15</Header>
+                <Header name="Modified">now</Header>
+                <Header name="Pragma">No-cache</Header>
+                <Header name="Server">Apache/2.2.9 (Debian) PHP/5.2.6-1+lenny13 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g</Header>
+                <Header name="Transfer-Encoding">chunked</Header>
+                <Header name="X-server">jokeindex.com</Header>
+            </Headers>
+            <ReasonPhrase>OK</ReasonPhrase>
+            <StatusCode>200</StatusCode>
+        </ResponseMessage>
+        <VariableAccess>
+            <Get name="organization.name" value="pa092013"/>
+            <Get name="environment.name" value="test"/>
+            <Get name="apiproxy.name" value="kris-jokes"/>
+            <Get name="apiproxy.revision" value="1"/>
+            <Get name="proxy.name" value="default"/>
+            <Get name="proxy.basepath" value="/kleva"/>
+            <Get name="proxy.pathsuffix" value="/joke"/>
+            <Get name="request.header.X-Forwarded-For"/>
+            <Get name="proxy.client.ip" value="65.87.20.6"/>
+            <Get name="target.name" value="default"/>
+            <Get name="dynamic.target"/>
+            <Get name="target.basepath" value="/services/20/api"/>
+            <Get name="dynamic.target"/>
+            <Get name="target.url" value="http://jokeindex.com/services/20/api"/>
+            <Get name="target.ip" value="184.106.242.165"/>
+            <Get name="client.ip" value="65.87.20.6"/>
+            <Get name="is.error" value="false"/>
+            <Get name="target.sent.start.timestamp" value="1380146347131"/>
+            <Get name="target.sent.end.timestamp" value="1380146347131"/>
+            <Get name="target.received.start.timestamp" value="1380146347587"/>
+            <Get name="target.received.end.timestamp" value="1380146347596"/>
+            <Get name="client.received.start.timestamp" value="1380146347065"/>
+            <Get name="client.received.end.timestamp" value="1380146347066"/>
+            <Get name="response.status.code" value="200"/>
+            <Get name="request.uri" value="/services/20/api/joke?jokeid=3229&amp;apikey=KFfn3y0CgdtJc8cC80JUOw8MGDutfFAt"/>
+            <Get name="request.path" value="/services/20/api/joke"/>
+            <Get name="request.verb" value="GET"/>
+            <Get name="virtualhost.name" value="default"/>
+            <Get name="apigee.developer.app.name" value="Kleva-App"/>
+            <Get name="apigee.apiproduct.name" value="old-jokes"/>
+            <Get name="apigee.access_token"/>
+            <Get name="apigee.client_id" value="KFfn3y0CgdtJc8cC80JUOw8MGDutfFAt"/>
+            <Get name="flow.resource.name"/>
+            <Get name="gateway.flow.id"/>
+            <Get name="sla"/>
+            <Get name="client.received.content.length" value="0"/>
+            <Get name="target.received.content.length" value="315"/>
+            <Get name="cachehit"/>
+            <Get name="apigee.developer.id" value="pa092013@@@dLONL38y548ERqrc"/>
+            <Get name="target.response.status.code" value="200"/>
+            <Get name="request.header.X-Forwarded-For"/>
+            <Get name="apigee.developer.email" value="rdhal@joyent.com"/>
+            <Get name="request.header.User-Agent" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML"/>
+            <Get name="organization.name" value="pa092013"/>
+            <Get name="environment.name" value="test"/>
+            <Get name="analytics"/>
+        </VariableAccess>
+    </Point>
+    <Point id="StateChange">
+        <DebugInfo>
+            <Timestamp>25-09-13 21:59:07:870</Timestamp>
+            <Properties>
+                <Property name="To">END</Property>
+                <Property name="From">RESP_SENT</Property>
+            </Properties>
+        </DebugInfo>
+        <ResponseMessage>
+            <Content>{"body":"An actual tip from page 16 of the HP &amp;quot;Environmental,Health &amp;amp; Safety Handbook for  Employees&amp;quot;: \n\n &amp;quot;Blink your eyelids periodically to lubricate your  eyes.&amp;quot;","title":"Advice for Idiots","jokeid":"3229","img":"","rating":"G","modified":"2000-07-31"}</Content>
+            <Headers>
+                <Header name="Cache-control">no-cache</Header>
+                <Header name="Connection">Keep-Alive</Header>
+                <Header name="Content-Type">application/json</Header>
+                <Header name="Date">Wed, 25 Sep 2013 22:16:16 GMT</Header>
+                <Header name="Etag">Wed</Header>
+                <Header name="Expires">Wed, 25 Sep 2013 22:16:16 GMT</Header>
+                <Header name="Keep-Alive">timeout=15</Header>
+                <Header name="Modified">now</Header>
+                <Header name="Pragma">No-cache</Header>
+                <Header name="Server">Apache/2.2.9 (Debian) PHP/5.2.6-1+lenny13 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g</Header>
+                <Header name="Transfer-Encoding">chunked</Header>
+                <Header name="X-server">jokeindex.com</Header>
+            </Headers>
+            <ReasonPhrase>OK</ReasonPhrase>
+            <StatusCode>200</StatusCode>
+        </ResponseMessage>
+    </Point>
+</Data></Message></Messages></DebugSession>

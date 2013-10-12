@@ -1,0 +1,35 @@
+{
+	"name": "API Craft Conference",
+	"footer": {
+		"devs": {
+			"text": "Non-Developers",
+			"link": "/nondev"
+		}
+	},
+	"resources": [
+		{
+			"name": "goals",
+			"title": "/goals",
+			"verbs": [
+				{
+					"type": "get",
+					"url": "/goals",
+					"description": "Goals and anticipated outcome",
+					"render": "goals"
+				},
+				{
+					"type": "post",
+					"url": "/goals",
+					"description": "State your Goal",
+					"render": "goals",
+					"inputs": [
+						{
+							"name": "goals",
+							"description": "Goals"
+						}
+					]
+				}
+				]
+		}
+	]
+}
