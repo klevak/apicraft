@@ -1,0 +1,105 @@
+---
+layout: default
+title: Developers @ VA
+overview: true
+---
+
+<div class="hero-unit">
+    <h2>Developer @ VA</h2>
+    <p>This is a repository of APIs and data related to the Department of Veterans Affairs (VA). These APIs, data, tools and resourecs are intended to provide developers with what they need to develop web and mobile applications, design data visualizations and stories using resources from the VA.</p>
+    <p align="center"><span style="color:#FF0000; font-size:18px; font-weight: bold:"><strong>This is not an official VA website, the goal is to show VA what is possible!</strong></span></p>
+    <p><a href="/va-developer/getting-started.html" class="btn btn-primary btn-large">Getting Started &raquo;</a></p>
+</div>
+<div class="row-fluid">
+    <div class="span1">&nbsp;</div>
+    <div class="span4">
+        
+        {% raw  %}
+        <script id="apiListingTemplate" type="text/template">       
+            <li><a href="api/index.html?#{{name}}"><strong>{{name}}</strong></a></li>                                                                                               
+        </script>
+        {% endraw %}        
+        
+        <script type="text/javascript">
+        function listAPIs()
+            {
+            $.getJSON('api.json', function(data) {
+                toggle = 0;
+                 $.each(data['apis'], function(key, val) {
+                    var template = $('#apiListingTemplate').html();
+                    var html = Mustache.to_html(template, val);
+                    $('#apiListing').append(html);                          
+                    });
+                });
+            } 
+        listAPIs();
+        </script>      
+
+        <h2>APIs</h2>
+        <div style="height: 150px; overflow: auto;">
+            <ul id="apiListing"></ul>
+        </div>
+        <br />
+        <p><a class="btn" href="#">View APIs &raquo;</a></p>
+    </div><!--/span-->
+    <div class="span4">
+        
+        {% raw  %}
+        <script id="dataListingTemplate" type="text/template">       
+            <li><a href="data/index.html?#{{title}}"><strong>{{title}}</strong></a></li>                                                                                               
+        </script>
+        {% endraw %}        
+        
+        <script type="text/javascript">
+        function listData()
+            {
+            $.getJSON('data.json', function(data) {
+                toggle = 0;
+                 $.each(data, function(key, val) {
+                    var template = $('#dataListingTemplate').html();
+                    var html = Mustache.to_html(template, val);
+                    $('#dataListing').append(html);                          
+                    });
+                });
+            } 
+        listData();
+        </script>          
+        
+        <h2>Data</h2>
+        <div style="height: 150px; overflow: auto;">
+            <ul id="dataListing"></ul>        
+        </div>
+        <br />
+        <p><a class="btn" href="#">View Data &raquo;</a></p>
+    </div><!--/span-->
+    <div class="span3">
+        
+        {% raw  %}
+        <script id="codeListingTemplate" type="text/template">       
+            <li><a href="code/index.html?#{{Name}}"><strong>{{Name}}</strong></a></li>                                                                                               
+        </script>
+        {% endraw %}        
+        
+        <script type="text/javascript">
+        function listCode()
+            {
+            $.getJSON('data/code.json', function(data) {
+                toggle = 0;
+                 $.each(data['Code'], function(key, val) {
+                    var template = $('#codeListingTemplate').html();
+                    var html = Mustache.to_html(template, val);
+                    $('#codeListing').append(html);                          
+                    });
+                });
+            } 
+        listCode();
+        </script>          
+        
+        <h2>Code</h2>
+        <div style="height: 150px; overflow: auto;">
+        <ul id="codeListing"> </ul>         
+        </div>
+        <br />
+        <p><a class="btn" href="code/">View Code &raquo;</a></p>
+    </div><!--/span-->
+</div><!--/row-->

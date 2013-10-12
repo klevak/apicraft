@@ -1,0 +1,86 @@
+{
+    "Pages": [
+        {
+            "Name": "Landing Page",
+            "URL": "http://kinlane.github.io/va-developer/"
+        },
+        {
+            "Name": "Getting Started",
+            "URL": "http://kinlane.github.io/va-developer/getting-started.html"
+        },
+        {
+            "Name": "APIs",
+            "URL": "http://kinlane.github.io/va-developer/api/"
+        },
+        {
+            "Name": "Data",
+            "URL": "http://kinlane.github.io/va-developer/data/"
+        },
+        {
+            "Name": "Code",
+            "URL": "http://kinlane.github.io/va-developer/code/"
+        },
+        {
+            "Name": "Gallery",
+            "URL": "http://kinlane.github.io/va-developer/gallery/"
+        },
+        {
+            "Name": "Support",
+            "URL": "http://kinlane.github.io/va-developer/support/"
+        },
+        {
+            "Name": "Roadmap",
+            "URL": "http://kinlane.github.io/va-developer/roadmap/"
+        },
+        {
+            "Name": "Blog",
+            "URL": "http://kinlane.github.io/va-developer/blog/"
+        },
+        {
+            "Name": "Terms of Use",
+            "URL": "http://kinlane.github.io/va-developer/legal/terms-of-use.html"
+        },
+        {
+            "Name": "Privacy Policy",
+            "URL": "http://kinlane.github.io/va-developer/legal/privacy-policy.html"
+        },
+        {
+            "Name": "Branding Guidelines",
+            "URL": "http://kinlane.github.io/va-developer/legal/branding-guidelines.html"
+        }
+    ],
+    "Building Blocks": [
+        {
+            "Name": "API",
+            "URL": "http://kinlane.github.io/va-developer/api.json"
+        },
+        {
+            "Name": "Data",
+            "URL": "http://kinlane.github.io/va-developer/data.json"
+        },
+        {
+            "Name": "Code",
+            "URL": "http://kinlane.github.io/va-developer/data/code.json"
+        },
+        {
+            "Name": "Gallery",
+            "URL": "http://kinlane.github.io/va-developer/data/gallery.json"
+        },
+        {
+            "Name": "Support",
+            "URL": "http://kinlane.github.io/va-developer/data/support.json"
+        },
+        {
+            "Name": "Roadmap",
+            "URL": "http://kinlane.github.io/va-developer/data/roadmap.json"
+        },
+        {
+            "Name": "Changelog",
+            "URL": "http://kinlane.github.io/va-developer/data/changelog.json"
+        },
+        {
+            "Name": "Legal",
+            "URL": "http://kinlane.github.io/va-developer/data/legal.json"
+        }
+    ]
+}
